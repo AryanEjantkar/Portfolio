@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Projects | Aryan Vimal Ejantkar</title>
+    <meta name="description"
+        content="Additional projects by Aryan Vimal Ejantkar — Smart Resume Screener, MumProject, SignScribe.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Aryan Ejantkar</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#certifications">Certs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <a href="index.html" class="btn-download">← Back Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-page-hero">
+            <div class="back-breadcrumb">
+                <a href="index.html">← Home</a>
+                <span>/</span>
+                <span class="highlight">More Projects</span>
+            </div>
+            <h1>Additional <span class="highlight">Projects</span></h1>
+            <p class="subtitle-page">A deeper look into my project archive — NLP, CV, and Web.</p>
+        </section>
+
+        <section class="extra-projects">
+            <!-- Smart Resume Screener -->
+            <article class="extra-project-card" id="smart-resume-screener">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">01</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/hirelens.png" alt="HireLens Logo" class="extra-project-img-real">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">COMPLETE</span>
+                        <span class="project-version">v1.0</span>
+                    </div>
+                    <h2>HireLens — Smart Resume Screener</h2>
+                    <p>An AI-powered resume analysis tool that parses and ranks resumes against job descriptions using
+                        NLP techniques. Automates the screening process for recruiters with semantic similarity scoring
+                        and keyword extraction.</p>
+                    <ul>
+                        <li>Parses PDF/DOCX resumes and extracts structured candidate profiles.</li>
+                        <li>Uses TF-IDF and sentence embeddings to rank resumes by JD match.</li>
+                        <li>Generates automated feedback reports per candidate.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>spaCy</span>
+                        <span>Scikit-learn</span>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://hirelens03.streamlit.app/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="resume-screener-link">↗ Open Live Project</a>
+                        <a href="#" class="btn-github" target="_blank" id="resume-screener-github">⌥ GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <!-- ReviewNest -->
+            <article class="extra-project-card" id="reviewnest">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">02</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/mumproject.png" alt="ReviewNest Logo" class="extra-project-img-real">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">LIVE</span>
+                        <span class="project-version">v1.0</span>
+                    </div>
+                    <h2>ReviewNest — Mom's Verdict Generator</h2>
+                    <p>An AI-driven product review analyzer built for the Mumzworld platform. Aggregates customer
+                        reviews and uses an LLM (Gemini) to generate a "Mom's Verdict" — a parent-friendly summary
+                        of what real moms are saying about a product.</p>
+                    <ul>
+                        <li>FastAPI backend with Gemini LLM integration for review synthesis.</li>
+                        <li>React/Vite frontend deployed on Vercel; backend on Render.</li>
+                        <li>Aggregates sentiment, confidence scores, and key insights from reviews.</li>
+                        <li>Implements robust JSON parsing and retry logic for LLM reliability.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>React</span>
+                        <span>Gemini AI</span>
+                        <span>Vercel</span>
+                        <span>Render</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://mumzproject.vercel.app/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="reviewnest-link">↗ Open Live Project</a>
+                        <a href="#" class="btn-github" target="_blank" id="reviewnest-github">⌥ GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <!-- SignScribe -->
+            <article class="extra-project-card" id="signscribe">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">03</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/signscribe_logo.png" alt="SignScribe Logo" class="extra-project-img-real">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">COMPLETE</span>
+                        <span class="project-version">v2.0</span>
+                    </div>
+                    <h2>SignScribe Pro</h2>
+                    <p>Real-time American Sign Language (ASL) to text converter running entirely in the browser.
+                        Uses MediaPipe hand-tracking with a geometric gesture classifier — no server required.</p>
+                    <ul>
+                        <li>Achieved 94% accuracy across 26 ASL gesture classes.</li>
+                        <li>Browser-native pipeline using MediaPipe + WebGL — zero latency.</li>
+                        <li>Stabilized gesture classification to eliminate flickering output.</li>
+                        <li>Sentence builder with text-to-speech output.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>MediaPipe</span>
+                        <span>CNN</span>
+                        <span>OpenCV</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://aryanejantkar.github.io/Sign-Scribe/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="signscribe-link">↗ Open Live Project</a>
+                        <a href="#" class="btn-github" target="_blank" id="signscribe-github">⌥ GitHub</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <span>ARYAN VIMAL EJANTKAR</span>
+            </div>
+            <div class="footer-center">
+                <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+                <a href="index.html">Main Portfolio</a>
+            </div>
+            <div class="footer-right">
+                <span>© 2026 NEURAL_ENGINE ARCHITECTURE. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
