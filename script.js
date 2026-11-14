@@ -1,12 +1,52 @@
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const href = this.getAttribute('href');
+        if (href && href.length > 1) {
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
 });
+
+// Number counter animation for statistics
+const counters = document.querySelectorAll('.counter');
+if (counters.length > 0) {
+    let animated = false;
+    const countObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+                animated = true;
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const speed = 25;
+                    const inc = Math.max(1, Math.ceil(target / speed));
+                    const updateCount = () => {
+                        count += inc;
+                        if (count < target) {
+                            counter.innerText = count;
+                            setTimeout(updateCount, 40);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    const statsSec = document.querySelector('.stats-overview');
+    if (statsSec) {
+        countObserver.observe(statsSec);
+    }
+}
 
 // Terminal-style typing effect for the code snippet
 const codeElement = document.querySelector('.code-snippet code');

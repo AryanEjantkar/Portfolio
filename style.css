@@ -195,6 +195,61 @@ nav ul a:hover {
     50% { transform: translateY(-20px); }
 }
 
+/* ─── Quick Stats Overview ─── */
+.stats-overview {
+    padding: 1rem 5% 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    background: linear-gradient(135deg, rgba(17, 17, 17, 0.95) 0%, rgba(13, 20, 28, 0.95) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.2rem 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.stat-box {
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0 1.2rem;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    font-family: var(--font-mono);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.5px;
+}
+
+.stat-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
 /* Skills Section */
 .skills {
     padding: 5rem 5%;
@@ -246,6 +301,141 @@ nav ul a:hover {
     border-radius: 4px;
     font-size: 0.8rem;
     color: var(--text-secondary);
+}
+
+/* ─── Technology Stack & What I Learned ─── */
+.tech-learnings {
+    margin-top: 4.5rem;
+}
+
+.sub-section-title {
+    font-size: 1.6rem;
+    font-family: var(--font-mono);
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1rem;
+}
+
+.sub-section-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.learnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.8rem;
+}
+
+.learning-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.8rem;
+    transition: border-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.learning-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-4px);
+}
+
+.learning-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.learning-num {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    border: 1px solid rgba(0, 245, 255, 0.3);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+}
+
+.learning-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+.learning-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.learning-tags span {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #333;
+    padding: 0.25rem 0.55rem;
+    border-radius: 3px;
+    color: #d1d5db;
+}
+
+.learning-takeaway {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-top: auto;
+    border-top: 1px dashed #262626;
+    padding-top: 1rem;
+}
+
+.learning-takeaway strong {
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+}
+
+/* ─── Project Pills / Badges ─── */
+.project-pill {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.project-pill.gemma {
+    background: rgba(168, 85, 247, 0.25);
+    color: #c084fc;
+    border: 1px solid #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.35);
+}
+
+.project-pill.azure {
+    background: rgba(0, 120, 212, 0.25);
+    color: #60a5fa;
+    border: 1px solid #0078d4;
+    box-shadow: 0 0 15px rgba(0, 120, 212, 0.35);
+}
+
+.project-pill.rag {
+    background: rgba(0, 245, 255, 0.2);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
 }
 
 /* Projects Section */
@@ -510,7 +700,73 @@ nav ul a:hover {
 }
 
 .project-actions {
-    margin-top: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 1rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-azure {
+    background: rgba(0, 120, 212, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(0, 120, 212, 0.5);
+}
+
+.btn-azure:hover {
+    background: #0078d4;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 120, 212, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-hf {
+    background: rgba(255, 210, 30, 0.12);
+    color: #ffd21e;
+    border: 1px solid rgba(255, 210, 30, 0.4);
+}
+
+.btn-hf:hover {
+    background: #ffd21e;
+    color: #111111;
+    box-shadow: 0 4px 15px rgba(255, 210, 30, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-live {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border: 1px solid var(--accent-color);
+}
+
+.btn-live:hover {
+    background: #5ef8ff;
+    box-shadow: 0 4px 15px rgba(0, 245, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-gh {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border: 1px solid #444;
+}
+
+.btn-gh:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 .btn-open-project {
@@ -970,6 +1226,43 @@ footer {
     margin: 0;
 }
 
+/* ─── Projects Page Stats Banner ─── */
+.projects-stats-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background: linear-gradient(135deg, rgba(17, 17, 17, 0.95) 0%, rgba(13, 20, 28, 0.95) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    max-width: 900px;
+}
+
+.p-stat {
+    text-align: center;
+    border-right: 1px solid #222;
+    padding: 0 1rem;
+}
+
+.p-stat:last-child {
+    border-right: none;
+}
+
+.p-stat-num {
+    font-family: var(--font-mono);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1.1;
+}
+
+.p-stat-lbl {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.3rem;
+}
+
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {
     .hero {
@@ -986,10 +1279,46 @@ footer {
     .project-featured .project-img { min-height: 280px; }
     .extra-project-card { grid-template-columns: 1fr; gap: 1.5rem; }
     .extra-project-number { font-size: 2.5rem; }
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .stat-box {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 1.5rem;
+    }
+    .stat-box:nth-child(3), .stat-box:nth-child(4) {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .projects-stats-banner {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .p-stat {
+        border-right: none;
+        border-bottom: 1px solid #222;
+        padding-bottom: 1rem;
+    }
+    .p-stat:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 768px) {
     nav ul { display: none; }
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+    .stat-box {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 1.2rem;
+    }
+    .stat-box:last-child {
+        border-bottom: none;
+    }
     .timeline::after { left: 31px; }
     .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
     .timeline-item::after { left: 21px; }
@@ -998,4 +1327,5 @@ footer {
     .cert-right { flex-wrap: wrap; }
     .contact-links { flex-direction: column; align-items: center; }
     .projects-page-hero h1 { font-size: 2.5rem; }
+    .learnings-grid { grid-template-columns: 1fr; }
 }

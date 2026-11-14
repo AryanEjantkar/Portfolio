@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More Projects | Aryan Vimal Ejantkar</title>
+    <title>All Projects | Aryan Vimal Ejantkar</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description"
-        content="Additional projects by Aryan Vimal Ejantkar — Smart Resume Screener, MumProject, SignScribe.">
+        content="Complete project portfolio of Aryan Vimal Ejantkar — SkillLens AI (Gemma 2), Terrain AI (Azure &amp; Hugging Face), HireLens, ReviewNest, SignScribe Pro, Granite RAG, and Studious.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -22,9 +23,9 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills &amp; Learnings</a></li>
                 <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#certifications">Certs</a></li>
+                <li><a href="index.html#certifications">Certifications</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
             <a href="index.html" class="btn-download">← Back Home</a>
@@ -36,55 +37,145 @@
             <div class="back-breadcrumb">
                 <a href="index.html">← Home</a>
                 <span>/</span>
-                <span class="highlight">More Projects</span>
+                <span class="highlight">All Projects</span>
             </div>
-            <h1>Additional <span class="highlight">Projects</span></h1>
-            <p class="subtitle-page">A deeper look into my project archive — NLP, CV, and Web.</p>
+            <h1>Complete Project <span class="highlight">Catalog</span></h1>
+            <p class="subtitle-page">A deeper look into all 7 systems built across Generative AI, Computer Vision, NLP, and Cloud Architecture.</p>
+
+            <!-- Projects Stats Summary Banner -->
+            <div class="projects-stats-banner">
+                <div class="p-stat">
+                    <div class="p-stat-num">7</div>
+                    <div class="p-stat-lbl">Total Projects Completed</div>
+                </div>
+                <div class="p-stat">
+                    <div class="p-stat-num">18+</div>
+                    <div class="p-stat-lbl">Technologies Applied</div>
+                </div>
+                <div class="p-stat">
+                    <div class="p-stat-num">4</div>
+                    <div class="p-stat-lbl">Cloud Platforms (Azure, HF, Vercel, Render)</div>
+                </div>
+            </div>
         </section>
 
         <section class="extra-projects">
-            <!-- Smart Resume Screener -->
-            <article class="extra-project-card" id="smart-resume-screener">
+            <!-- 01: SkillLens AI [Gemma One] -->
+            <article class="extra-project-card" id="skilllens-ai">
                 <div class="extra-project-left">
                     <div class="extra-project-number">01</div>
                     <div class="extra-project-img-wrap">
-                        <img src="images/hirelens.png" alt="HireLens Logo" class="extra-project-img-real">
+                        <img src="images/skilllens.png" alt="SkillLens AI Project Banner" class="extra-project-img-real">
                     </div>
                 </div>
                 <div class="extra-project-content">
                     <div class="project-meta">
-                        <span class="project-status">COMPLETE</span>
-                        <span class="project-version">v1.0</span>
+                        <span class="project-status">LIVE APP</span>
+                        <span class="project-version">v1.0 • Google Gemma 2</span>
                     </div>
-                    <h2>HireLens — Smart Resume Screener</h2>
-                    <p>An AI-powered resume analysis tool that parses and ranks resumes against job descriptions using
-                        NLP techniques. Automates the screening process for recruiters with semantic similarity scoring
-                        and keyword extraction.</p>
+                    <h2>SkillLens AI — Gemma-Powered Teaching Pack Generator</h2>
+                    <p>An open-source AI toolkit built for independent educators, private tutors, and coaching centers. It automates the preparation of high-quality teaching materials by transforming raw textbook excerpts and syllabus notes into ready-to-teach curriculum packs—saving teachers 5 to 12 hours of unpaid prep time every week.</p>
                     <ul>
-                        <li>Parses PDF/DOCX resumes and extracts structured candidate profiles.</li>
-                        <li>Uses TF-IDF and sentence embeddings to rank resumes by JD match.</li>
-                        <li>Generates automated feedback reports per candidate.</li>
+                        <li>Processes syllabus notes and PDFs to generate tiered diagnostic quizzes complete with verified explanations for both correct answers and distractors.</li>
+                        <li>Outputs step-by-step worked math exercises with KaTeX mathematical formatting and spaced-retention study flashcards.</li>
+                        <li>Features an interactive Socratic assistant drawer that coaches students through misconceptions rather than spoiling direct answers.</li>
+                        <li>Built with Google's Gemma 2 open model family, supporting both cloud inference (Google GenAI SDK) and 100% private offline local generation via Ollama.</li>
                     </ul>
                     <div class="project-tags">
+                        <span>Google Gemma 2</span>
                         <span>Python</span>
-                        <span>NLP</span>
-                        <span>spaCy</span>
-                        <span>Scikit-learn</span>
                         <span>FastAPI</span>
+                        <span>React 19</span>
+                        <span>Ollama</span>
+                        <span>KaTeX</span>
+                        <span>Vercel</span>
                     </div>
                     <div class="extra-project-actions">
-                        <a href="https://hirelens03.streamlit.app/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="resume-screener-link">↗ Open Live Project</a>
-                        <a href="#" class="btn-github" target="_blank" id="resume-screener-github">⌥ GitHub</a>
+                        <a href="https://skilllens-ai.vercel.app/" class="btn-open-project" target="_blank" rel="noopener noreferrer">↗ Open Live Project</a>
+                        <a href="https://github.com/AryanEjantkar/SkillLensAI" class="btn-github" target="_blank">⌥ GitHub Repo</a>
                     </div>
                 </div>
             </article>
 
             <div class="project-divider"></div>
 
-            <!-- ReviewNest -->
-            <article class="extra-project-card" id="reviewnest">
+            <!-- 02: Terrain AI -->
+            <article class="extra-project-card" id="terrain-ai">
                 <div class="extra-project-left">
                     <div class="extra-project-number">02</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/terrain_ai.png" alt="Terrain AI Prediction System" class="extra-project-img-real">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">DUAL DEPLOYED</span>
+                        <span class="project-version">v2.0 • Azure &amp; HF</span>
+                    </div>
+                    <h2>Terrain AI — Satellite Deep Learning Classification</h2>
+                    <p>An end-to-end computer vision and deep learning system that analyzes satellite Earth observation imagery to classify land cover types in real time. Built with custom Convolutional Neural Networks (CNNs) trained on multi-spectral spatial tiles.</p>
+                    <ul>
+                        <li>Concurrent dual-cloud deployment on <strong>Microsoft Azure Cloud</strong> and <strong>Hugging Face Spaces</strong> for high availability and low latency.</li>
+                        <li>FastAPI containerized backend handling image preprocessing, normalization, and tensor prediction.</li>
+                        <li>Interactive web interface enabling users to test satellite tiles and visualize class probabilities with confidence scoring.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>CNN</span>
+                        <span>Python</span>
+                        <span>Microsoft Azure</span>
+                        <span>Hugging Face</span>
+                        <span>FastAPI</span>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://terrain-ai.azurewebsites.net" class="btn-open-project" target="_blank" rel="noopener noreferrer" style="background: #0078d4; color: #fff;">☁ Open Azure Deployment</a>
+                        <a href="https://huggingface.co/spaces/AryanYeager/Terrain-AI" class="btn-open-project" target="_blank" rel="noopener noreferrer" style="background: #ffd21e; color: #111;">🤗 Open Hugging Face Space</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <!-- 03: HireLens -->
+            <article class="extra-project-card" id="smart-resume-screener">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">03</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/hirelens.png" alt="HireLens Logo" class="extra-project-img-real">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">LIVE APP</span>
+                        <span class="project-version">v1.0</span>
+                    </div>
+                    <h2>HireLens — Smart Resume Screener</h2>
+                    <p>An AI-powered resume analysis engine that parses and ranks applicant resumes against job descriptions using NLP techniques. Helps recruiters filter high volumes of applications with semantic similarity scoring and automated keyword extraction.</p>
+                    <ul>
+                        <li>Parses PDF/DOCX resumes and extracts structured candidate profiles, skill sets, and work histories.</li>
+                        <li>Uses TF-IDF and sentence embeddings to rank candidates objectively against job description criteria.</li>
+                        <li>Generates automated feedback reports per candidate highlighting skill gaps and strengths.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>spaCy</span>
+                        <span>Scikit-learn</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://hirelens03.streamlit.app/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="resume-screener-link">↗ Open Live Project</a>
+                        <a href="https://github.com/AryanEjantkar" class="btn-github" target="_blank" id="resume-screener-github">⌥ GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <!-- 04: ReviewNest -->
+            <article class="extra-project-card" id="reviewnest">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">04</div>
                     <div class="extra-project-img-wrap">
                         <img src="images/mumproject.png" alt="ReviewNest Logo" class="extra-project-img-real">
                     </div>
@@ -95,14 +186,12 @@
                         <span class="project-version">v1.0</span>
                     </div>
                     <h2>ReviewNest — Mom's Verdict Generator</h2>
-                    <p>An AI-driven product review analyzer built for the Mumzworld platform. Aggregates customer
-                        reviews and uses an LLM (Gemini) to generate a "Mom's Verdict" — a parent-friendly summary
-                        of what real moms are saying about a product.</p>
+                    <p>An AI-driven product review synthesizer built for the Mumzworld platform. Aggregates customer reviews and uses Google's Gemini LLM to generate a "Mom's Verdict" — a parent-friendly summary of what real moms are saying about a product.</p>
                     <ul>
-                        <li>FastAPI backend with Gemini LLM integration for review synthesis.</li>
-                        <li>React/Vite frontend deployed on Vercel; backend on Render.</li>
-                        <li>Aggregates sentiment, confidence scores, and key insights from reviews.</li>
-                        <li>Implements robust JSON parsing and retry logic for LLM reliability.</li>
+                        <li>FastAPI backend with Gemini LLM integration for review synthesis and sentiment categorization.</li>
+                        <li>React/Vite frontend deployed on Vercel; resilient backend deployed on Render.</li>
+                        <li>Aggregates sentiment, confidence scores, and key buyer insights from hundreds of reviews.</li>
+                        <li>Implements robust JSON parsing and retry logic for dependable LLM output.</li>
                     </ul>
                     <div class="project-tags">
                         <span>Python</span>
@@ -114,17 +203,17 @@
                     </div>
                     <div class="extra-project-actions">
                         <a href="https://mumzproject.vercel.app/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="reviewnest-link">↗ Open Live Project</a>
-                        <a href="#" class="btn-github" target="_blank" id="reviewnest-github">⌥ GitHub</a>
+                        <a href="https://github.com/AryanEjantkar" class="btn-github" target="_blank" id="reviewnest-github">⌥ GitHub</a>
                     </div>
                 </div>
             </article>
 
             <div class="project-divider"></div>
 
-            <!-- SignScribe -->
+            <!-- 05: SignScribe -->
             <article class="extra-project-card" id="signscribe">
                 <div class="extra-project-left">
-                    <div class="extra-project-number">03</div>
+                    <div class="extra-project-number">05</div>
                     <div class="extra-project-img-wrap">
                         <img src="images/signscribe_logo.png" alt="SignScribe Logo" class="extra-project-img-real">
                     </div>
@@ -134,25 +223,95 @@
                         <span class="project-status">COMPLETE</span>
                         <span class="project-version">v2.0</span>
                     </div>
-                    <h2>SignScribe Pro</h2>
-                    <p>Real-time American Sign Language (ASL) to text converter running entirely in the browser.
-                        Uses MediaPipe hand-tracking with a geometric gesture classifier — no server required.</p>
+                    <h2>SignScribe Pro — Real-Time ASL Hand Gesture Translator</h2>
+                    <p>Real-time American Sign Language (ASL) to text and speech converter running entirely in the client's browser. Uses MediaPipe hand-tracking with a geometric gesture classifier to eliminate server latency and protect user camera privacy.</p>
                     <ul>
-                        <li>Achieved 94% accuracy across 26 ASL gesture classes.</li>
-                        <li>Browser-native pipeline using MediaPipe + WebGL — zero latency.</li>
-                        <li>Stabilized gesture classification to eliminate flickering output.</li>
-                        <li>Sentence builder with text-to-speech output.</li>
+                        <li>Achieved 94% accuracy across 26 ASL gesture classes under real-world webcam conditions.</li>
+                        <li>Browser-native pipeline using MediaPipe + WebGL for instant, zero-latency inference.</li>
+                        <li>Stabilized gesture smoothing to prevent flickering predictions.</li>
+                        <li>Includes a sentence builder with integrated Text-to-Speech output.</li>
                     </ul>
                     <div class="project-tags">
                         <span>JavaScript</span>
                         <span>MediaPipe</span>
-                        <span>CNN</span>
+                        <span>WebGL</span>
                         <span>OpenCV</span>
                         <span>Python</span>
                     </div>
                     <div class="extra-project-actions">
                         <a href="https://aryanejantkar.github.io/Sign-Scribe/" class="btn-open-project" target="_blank" rel="noopener noreferrer" id="signscribe-link">↗ Open Live Project</a>
-                        <a href="#" class="btn-github" target="_blank" id="signscribe-github">⌥ GitHub</a>
+                        <a href="https://github.com/AryanEjantkar" class="btn-github" target="_blank" id="signscribe-github">⌥ GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <!-- 06: Granite RAG -->
+            <article class="extra-project-card" id="granite-rag">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">06</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/granite.png" alt="Granite RAG Project" class="extra-project-img-real">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">COMPLETE</span>
+                        <span class="project-version">v1.0</span>
+                    </div>
+                    <h2>Granite RAG — Semantic Document Intelligence</h2>
+                    <p>A Retrieval-Augmented Generation (RAG) system built with LangChain that anchors LLM answers strictly in verified source materials, eliminating hallucinations in high-stakes knowledge search.</p>
+                    <ul>
+                        <li>Automated embedding and text-chunking pipeline capable of vectorizing 100+ dense technical documents.</li>
+                        <li>Reduced query response retrieval time by 35% through recursive text chunking and similarity caching.</li>
+                        <li>Strict hallucination guardrails ensuring factual, verifiable citations for every answer.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>Vector Search</span>
+                        <span>OpenAI</span>
+                        <span>RAG</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://github.com/AryanEjantkar/RAG-" class="btn-open-project" target="_blank" rel="noopener noreferrer">⌥ View GitHub Repository</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <!-- 07: Smart Study Planner -->
+            <article class="extra-project-card" id="studious">
+                <div class="extra-project-left">
+                    <div class="extra-project-number">07</div>
+                    <div class="extra-project-img-wrap">
+                        <img src="images/hero.png" alt="Smart Study Planner" class="extra-project-img-real" style="object-fit: contain; padding: 1rem; background: #111;">
+                    </div>
+                </div>
+                <div class="extra-project-content">
+                    <div class="project-meta">
+                        <span class="project-status">LIVE APP</span>
+                        <span class="project-version">v1.0 • Edunet Internship</span>
+                    </div>
+                    <h2>Smart Study Planner (Studious)</h2>
+                    <p>A productivity web application developed during my web development internship with Edunet Foundation. Designed to help students plan structured study routines, manage academic deadlines, and maintain consistent daily focus.</p>
+                    <ul>
+                        <li>Responsive, accessible UI crafted with vanilla JavaScript, HTML5, and CSS3.</li>
+                        <li>LocalStorage synchronization ensuring seamless offline timetable persistence.</li>
+                        <li>Focus timer and progress tracking for daily revision milestones.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>LocalStorage</span>
+                        <span>Edunet</span>
+                    </div>
+                    <div class="extra-project-actions">
+                        <a href="https://aryanejantkar.github.io/Studious/" class="btn-open-project" target="_blank" rel="noopener noreferrer">↗ Open Live Project</a>
+                        <a href="https://github.com/AryanEjantkar" class="btn-github" target="_blank">⌥ GitHub</a>
                     </div>
                 </div>
             </article>
@@ -162,15 +321,15 @@
     <footer>
         <div class="footer-content">
             <div class="footer-left">
-                <span>ARYAN VIMAL EJANTKAR</span>
+                <span>ARYAN VIMAL EJANTKAR • AI &amp; ML ENGINEER</span>
             </div>
             <div class="footer-center">
-                <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+                <a href="https://github.com/AryanEjantkar" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/aryan-vimal-ejantkar-a94936253/" target="_blank">LinkedIn</a>
                 <a href="index.html">Main Portfolio</a>
             </div>
             <div class="footer-right">
-                <span>© 2026 NEURAL_ENGINE ARCHITECTURE. ALL RIGHTS RESERVED.</span>
+                <span>© 2026 ARYAN VIMAL EJANTKAR. ALL RIGHTS RESERVED.</span>
             </div>
         </div>
     </footer>
