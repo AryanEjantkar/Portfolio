@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Projects | Aryan Vimal Ejantkar</title>
+    <title>Side Projects | Aryan Vimal Ejantkar</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description"
-        content="Complete project portfolio of Aryan Vimal Ejantkar — SkillLens AI (Gemma 2), Terrain AI (Azure &amp; Hugging Face), HireLens, ReviewNest, SignScribe Pro, Granite RAG, and Studious.">
+        content="Side projects and AI prototypes by Aryan Vimal Ejantkar — SkillLens AI (Gemma 2), HireLens, ReviewNest, SignScribe Pro, and Studious.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
             <div class="logo">Aryan Ejantkar</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#projects">Core Projects</a></li>
                 <li><a href="index.html#skills">Skills &amp; Learnings</a></li>
                 <li><a href="index.html#experience">Experience</a></li>
                 <li><a href="index.html#certifications">Certifications</a></li>
@@ -37,25 +37,33 @@
             <div class="back-breadcrumb">
                 <a href="index.html">← Home</a>
                 <span>/</span>
-                <span class="highlight">All Projects</span>
+                <span class="highlight">Side Projects</span>
             </div>
-            <h1>Complete Project <span class="highlight">Catalog</span></h1>
-            <p class="subtitle-page">A deeper look into all 7 systems built across Generative AI, Computer Vision, NLP, and Cloud Architecture.</p>
+            <h1>Side Projects &amp; <span class="highlight">Prototypes</span></h1>
+            <p class="subtitle-page">A curated collection of side projects, developer tools, and full-stack experiments — built to solve real-world problems with LLMs, NLP, and computer vision.</p>
 
             <!-- Projects Stats Summary Banner -->
             <div class="projects-stats-banner">
                 <div class="p-stat">
-                    <div class="p-stat-num">7</div>
-                    <div class="p-stat-lbl">Total Projects Completed</div>
+                    <div class="p-stat-num">5</div>
+                    <div class="p-stat-lbl">Side Projects Completed</div>
                 </div>
                 <div class="p-stat">
-                    <div class="p-stat-num">18+</div>
-                    <div class="p-stat-lbl">Technologies Applied</div>
+                    <div class="p-stat-num">14+</div>
+                    <div class="p-stat-lbl">Technologies Applied (Gemma 2, MediaPipe, etc.)</div>
                 </div>
                 <div class="p-stat">
-                    <div class="p-stat-num">4</div>
-                    <div class="p-stat-lbl">Cloud Platforms (Azure, HF, Vercel, Render)</div>
+                    <div class="p-stat-num">3</div>
+                    <div class="p-stat-lbl">Live Web Deployments (Vercel, Streamlit, Pages)</div>
                 </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary);">
+                <span>Looking for flagship research systems? View </span>
+                <a href="index.html#terrain-ai" style="color: var(--accent-color); text-decoration: underline; text-underline-offset: 3px;">Terrain AI (Azure &amp; HF)</a>
+                <span> and </span>
+                <a href="index.html#granite-rag" style="color: var(--accent-color); text-decoration: underline; text-underline-offset: 3px;">Granite RAG</a>
+                <span> on the main page.</span>
             </div>
         </section>
 
@@ -70,7 +78,7 @@
                 </div>
                 <div class="extra-project-content">
                     <div class="project-meta">
-                        <span class="project-status">LIVE APP</span>
+                        <span class="project-status">SIDE PROJECT • LIVE APP</span>
                         <span class="project-version">v1.0 • Google Gemma 2</span>
                     </div>
                     <h2>SkillLens AI — Gemma-Powered Teaching Pack Generator</h2>
@@ -99,54 +107,17 @@
 
             <div class="project-divider"></div>
 
-            <!-- 02: Terrain AI -->
-            <article class="extra-project-card" id="terrain-ai">
-                <div class="extra-project-left">
-                    <div class="extra-project-number">02</div>
-                    <div class="extra-project-img-wrap">
-                        <img src="images/terrain_ai.png" alt="Terrain AI Prediction System" class="extra-project-img-real">
-                    </div>
-                </div>
-                <div class="extra-project-content">
-                    <div class="project-meta">
-                        <span class="project-status">DUAL DEPLOYED</span>
-                        <span class="project-version">v2.0 • Azure &amp; HF</span>
-                    </div>
-                    <h2>Terrain AI — Satellite Deep Learning Classification</h2>
-                    <p>An end-to-end computer vision and deep learning system that analyzes satellite Earth observation imagery to classify land cover types in real time. Built with custom Convolutional Neural Networks (CNNs) trained on multi-spectral spatial tiles.</p>
-                    <ul>
-                        <li>Concurrent dual-cloud deployment on <strong>Microsoft Azure Cloud</strong> and <strong>Hugging Face Spaces</strong> for high availability and low latency.</li>
-                        <li>FastAPI containerized backend handling image preprocessing, normalization, and tensor prediction.</li>
-                        <li>Interactive web interface enabling users to test satellite tiles and visualize class probabilities with confidence scoring.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span>CNN</span>
-                        <span>Python</span>
-                        <span>Microsoft Azure</span>
-                        <span>Hugging Face</span>
-                        <span>FastAPI</span>
-                        <span>TensorFlow</span>
-                    </div>
-                    <div class="extra-project-actions">
-                        <a href="https://terrain-ai.azurewebsites.net" class="btn-open-project" target="_blank" rel="noopener noreferrer" style="background: #0078d4; color: #fff;">☁ Open Azure Deployment</a>
-                        <a href="https://huggingface.co/spaces/AryanYeager/Terrain-AI" class="btn-open-project" target="_blank" rel="noopener noreferrer" style="background: #ffd21e; color: #111;">🤗 Open Hugging Face Space</a>
-                    </div>
-                </div>
-            </article>
-
-            <div class="project-divider"></div>
-
-            <!-- 03: HireLens -->
+            <!-- 02: HireLens -->
             <article class="extra-project-card" id="smart-resume-screener">
                 <div class="extra-project-left">
-                    <div class="extra-project-number">03</div>
+                    <div class="extra-project-number">02</div>
                     <div class="extra-project-img-wrap">
                         <img src="images/hirelens.png" alt="HireLens Logo" class="extra-project-img-real">
                     </div>
                 </div>
                 <div class="extra-project-content">
                     <div class="project-meta">
-                        <span class="project-status">LIVE APP</span>
+                        <span class="project-status">SIDE PROJECT • LIVE APP</span>
                         <span class="project-version">v1.0</span>
                     </div>
                     <h2>HireLens — Smart Resume Screener</h2>
@@ -172,17 +143,17 @@
 
             <div class="project-divider"></div>
 
-            <!-- 04: ReviewNest -->
+            <!-- 03: ReviewNest -->
             <article class="extra-project-card" id="reviewnest">
                 <div class="extra-project-left">
-                    <div class="extra-project-number">04</div>
+                    <div class="extra-project-number">03</div>
                     <div class="extra-project-img-wrap">
                         <img src="images/mumproject.png" alt="ReviewNest Logo" class="extra-project-img-real">
                     </div>
                 </div>
                 <div class="extra-project-content">
                     <div class="project-meta">
-                        <span class="project-status">LIVE</span>
+                        <span class="project-status">SIDE PROJECT • LIVE</span>
                         <span class="project-version">v1.0</span>
                     </div>
                     <h2>ReviewNest — Mom's Verdict Generator</h2>
@@ -210,17 +181,17 @@
 
             <div class="project-divider"></div>
 
-            <!-- 05: SignScribe -->
+            <!-- 04: SignScribe -->
             <article class="extra-project-card" id="signscribe">
                 <div class="extra-project-left">
-                    <div class="extra-project-number">05</div>
+                    <div class="extra-project-number">04</div>
                     <div class="extra-project-img-wrap">
                         <img src="images/signscribe_logo.png" alt="SignScribe Logo" class="extra-project-img-real">
                     </div>
                 </div>
                 <div class="extra-project-content">
                     <div class="project-meta">
-                        <span class="project-status">COMPLETE</span>
+                        <span class="project-status">SIDE PROJECT • COMPLETE</span>
                         <span class="project-version">v2.0</span>
                     </div>
                     <h2>SignScribe Pro — Real-Time ASL Hand Gesture Translator</h2>
@@ -247,52 +218,17 @@
 
             <div class="project-divider"></div>
 
-            <!-- 06: Granite RAG -->
-            <article class="extra-project-card" id="granite-rag">
-                <div class="extra-project-left">
-                    <div class="extra-project-number">06</div>
-                    <div class="extra-project-img-wrap">
-                        <img src="images/granite.png" alt="Granite RAG Project" class="extra-project-img-real">
-                    </div>
-                </div>
-                <div class="extra-project-content">
-                    <div class="project-meta">
-                        <span class="project-status">COMPLETE</span>
-                        <span class="project-version">v1.0</span>
-                    </div>
-                    <h2>Granite RAG — Semantic Document Intelligence</h2>
-                    <p>A Retrieval-Augmented Generation (RAG) system built with LangChain that anchors LLM answers strictly in verified source materials, eliminating hallucinations in high-stakes knowledge search.</p>
-                    <ul>
-                        <li>Automated embedding and text-chunking pipeline capable of vectorizing 100+ dense technical documents.</li>
-                        <li>Reduced query response retrieval time by 35% through recursive text chunking and similarity caching.</li>
-                        <li>Strict hallucination guardrails ensuring factual, verifiable citations for every answer.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>LangChain</span>
-                        <span>Vector Search</span>
-                        <span>OpenAI</span>
-                        <span>RAG</span>
-                    </div>
-                    <div class="extra-project-actions">
-                        <a href="https://github.com/AryanEjantkar/RAG-" class="btn-open-project" target="_blank" rel="noopener noreferrer">⌥ View GitHub Repository</a>
-                    </div>
-                </div>
-            </article>
-
-            <div class="project-divider"></div>
-
-            <!-- 07: Smart Study Planner -->
+            <!-- 05: Smart Study Planner -->
             <article class="extra-project-card" id="studious">
                 <div class="extra-project-left">
-                    <div class="extra-project-number">07</div>
+                    <div class="extra-project-number">05</div>
                     <div class="extra-project-img-wrap">
                         <img src="images/hero.png" alt="Smart Study Planner" class="extra-project-img-real" style="object-fit: contain; padding: 1rem; background: #111;">
                     </div>
                 </div>
                 <div class="extra-project-content">
                     <div class="project-meta">
-                        <span class="project-status">LIVE APP</span>
+                        <span class="project-status">SIDE PROJECT • LIVE APP</span>
                         <span class="project-version">v1.0 • Edunet Internship</span>
                     </div>
                     <h2>Smart Study Planner (Studious)</h2>

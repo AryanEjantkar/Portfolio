@@ -788,12 +788,14 @@ nav ul a:hover {
 
 /* ─── More Projects CTA Card ─── */
 .project-more-cta {
+    grid-column: 1 / -1;
     display: flex;
     align-items: stretch;
     cursor: pointer;
     border: 1px dashed #444;
     transition: border-color 0.3s, box-shadow 0.3s;
     background: linear-gradient(135deg, #0e0e0e 0%, #111820 100%);
+    border-radius: 12px;
 }
 
 .project-more-cta:hover {
